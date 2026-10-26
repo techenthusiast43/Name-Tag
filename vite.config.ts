@@ -14,10 +14,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "ox/tempo": path.resolve(
-        __dirname,
-        "node_modules/viem/node_modules/ox/_esm/tempo/index.js"
-      ),
+      "@wagmi/core/tempo": path.resolve(process.cwd(), "src/empty.js"),
     },
   },
 });

@@ -1,2 +1,2 @@
-export const tempo = {};
-export default {};
+export const tempoWallet = () => ({ id: "tempo", name: "Tempo" });
+export default { tempoWallet };
