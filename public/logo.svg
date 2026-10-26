@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <!-- Cyan to Violet Gradient -->
+    <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="50%" stop-color="#4FACFE" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+
+    <!-- Glass Surface Gradient -->
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1726" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#070A12" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Glass Frame -->
+  <rect x="8" y="8" width="104" height="104" rx="26" fill="url(#glassGrad)" stroke="url(#cyberGrad)" stroke-width="2" />
+
+  <!-- Inner Tag Shape (Beveled Web3 Identity Tag) -->
+  <path d="M38 24 L82 24 C88 24 93 28 95 34 L102 62 C104 69 101 76 95 80 L66 100 C62 103 58 103 54 100 L25 80 C19 76 16 69 18 62 L25 34 C27 28 32 24 38 24 Z" 
+        fill="#060911" 
+        stroke="url(#cyberGrad)" 
+        stroke-width="1.8" 
+        stroke-opacity="0.75" />
+
+  <!-- Tag Lanyard Hole with Accent Ring -->
+  <circle cx="82" cy="38" r="5" stroke="url(#cyberGrad)" stroke-width="1.8" fill="#0A0E1A" />
+  <circle cx="82" cy="38" r="2.2" fill="#00F2FE" opacity="0.8" />
+
+  <!-- Stylized Holographic @ Insignia -->
+  <path d="M 68 53 C 66 47 59 45 52 47 C 43 50 40 60 43 68 C 46 76 57 78 64 74 C 68 71 71 67 71 61 L 71 50 C 71 42 63 36 53 37 C 40 38 31 49 32 63 C 33 78 45 88 60 87 C 68 86 75 82 79 77" 
+        stroke="url(#cyberGrad)" 
+        stroke-width="4.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        filter="url(#neonGlow)" />
+
+  <!-- Inner '@' Node Dot -->
+  <circle cx="56" cy="60" r="4.2" fill="#00F2FE" filter="url(#neonGlow)" />
+</svg>

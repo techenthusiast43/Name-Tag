@@ -1,0 +1,33 @@
+{
+  "name": "name-tag",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@reown/appkit": "^1.8.24",
+    "@reown/appkit-adapter-wagmi": "^1.8.24",
+    "@tanstack/react-query": "^5.105.0",
+    "lucide-react": "^1.61.0",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "viem": "^2.57.11",
+    "wagmi": "^2.19.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.88.0",
+    "solc": "^0.8.20",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.4"
+  }
+}
